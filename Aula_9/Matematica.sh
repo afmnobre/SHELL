@@ -56,3 +56,28 @@ echo "EXEMPLO_2:"
 echo 'bc <<< "Squale=2 ; 2.1 + 3.2"'
 bc <<< "squale=2 ; 2.1 + 3.2"
 
+echo -e "\n------------------------------------------------------------------------"
+
+echo -e "\nUSANDO \$(()) : Testa uma operação ARITMÉTICA."
+echo -e "        (()) : retorna 0 ou 1 para testes.\n"
+
+echo "echo \$((1 + 20))"
+echo "Resultado:"
+echo -e "$((1+20))\n"
+
+echo "echo \$((30 >= 20))"
+echo "Resultado:"
+echo -e "$((30>=20))\n"
+
+echo "echo \$((30 * 20))"
+echo "Resultado:"
+echo -e "$((30*20))\n"
+
+echo "echo \$((30 + 20))"
+echo "Resultado:"
+echo -e "$((30+20))\n"
+
+echo "echo \$((30 == 20))"
+echo "Resultado:"
+echo "$((30 < 20))"
+
