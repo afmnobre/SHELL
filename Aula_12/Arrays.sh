@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 #
-#
 echo -e "\n------------------------------------------------------------------------------------------\n"
 echo -e "# Uma variavel no SHELL armazena um unico valor, um array armazena diversos valores.\n"
 
 echo -e "Existem dois tipos de vetores no SHELL:\n"
 echo "NORMAIS - são numerados a partir do valor 0"
 echo "array[indice]=valor"
-echo "-----------------------------------"
-echo "ASSOCIATIVOS - "
-
+echo -e "\n---------------------------------------------------\n"
+echo "ASSOCIATIVOS - voce determina o valor das posições"
+echo "dados[nome]"
+echo "dados[sobrenome]"
+echo "dados[idade]"
 
 echo -e "\n------------------------------------------------------------------------------------------\n"
-echo -e "# Cortando uma variavel de jeito antigo.\n"
+echo -e "# Cortando uma variavel de jeito antigo, podem ter valores determinados ou strings.\n"
 
 echo "var=\"ABACAXI TOMATE CEBOLA BANANA\""
 var="ABACAXI TOMATE CEBOLA BANANA"

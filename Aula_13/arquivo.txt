@@ -1,0 +1,12 @@
+O arquivo é maneiro
+tem uma série de linhas
+e as vezes ele faz umas coisas inesperadas
+
+
+EOF
+
+mas foi end mesmo?
+
+Aqui é o manual de ajuda...
+faça isso e aquilo que vai dar tudo certo!
+$home
