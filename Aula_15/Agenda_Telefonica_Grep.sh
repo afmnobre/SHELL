@@ -25,13 +25,16 @@ function _adicionar(){
         done
         ((i++))
     done
+        #RETIRANDO PONTOS E TRAÇOS DO CPF.
+        CPF_TRATADO=$(echo ${dados[2]} | sed 's/\.//g' | sed 's/\-//g')
+        echo "O CPF SEM PONTOS é $CPF_TRATADO"
 
         if ! grep -q "${dados[2]}" "$banco_de_dados"; then
             #CRIANDO O CONTADOR DA PAGINA NO ARQUIVO banco_de_dados.txt
             ID=$(wc -l $banco_de_dados | cut -d ' ' -f 1 )
             chave=$(("$ID"+"1"))
             #ENVIANDOS OS DADOS PARA O ARQUIVO DE TEXTO.
-            echo "$chave:${dados[1]}:${dados[2]}:${dados[3]}:${dados[4]}:${dados[5]}" | tr 'A-Z' 'a-z' >> "$banco_de_dados"
+            echo "$chave:${dados[1]}:$CPF_TRATADO:${dados[3]}:${dados[4]}:${dados[5]}" | tr 'A-Z' 'a-z' >> "$banco_de_dados"
         else
             sleep 2s
             echo "O CPF: ${dados[2]} ja esta cadastrado! Saindo..."
