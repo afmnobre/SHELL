@@ -1,0 +1,3 @@
+NOME:DDD:TELEFONE:CIDADE
+2:lucas:011:24671907:guarulhos
+3:daniel:021:93843929:são paulo
