@@ -13,7 +13,7 @@ fecha_cor="\E[m"
 #Se o arquivo não existir criar um novo.
 [[ ! -e "$banco_de_dados" ]] && {
 cat > "$banco_de_dados" <<EOF
-CPF:NOME:DDD:TELEFONE:CIDADE
+ID:CPF:NOME:DDD:TELEFONE:CIDADE
 EOF
 }
 #Não pode ser usuario ROOT.
@@ -50,11 +50,15 @@ function _adicionar(){
         fi
 }
 
+function _buscar(){
+    echo "O nome é: $1"
+}
 
 
 # MENU DE ENTRADA
 case $1 in
     -a | --adicionar) _adicionar ;;
+    -b | --buscar)    _buscar    ;;
 
 
 esac
