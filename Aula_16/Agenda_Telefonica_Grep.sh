@@ -57,8 +57,8 @@ function _buscar(){
 
 # MENU DE ENTRADA
 case $1 in
-    -a | --adicionar) _adicionar ;;
-    -b | --buscar)    _buscar    ;;
+    -a | --adicionar) shift; _adicionar ;;
+    -b | --buscar)    shift; _buscar    ;;
 
 
 esac
