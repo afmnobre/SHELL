@@ -1,0 +1,8 @@
+
+================================
+Ola Meu Nome é: Lucas
+Minha Idade é: 36
+Meu Animal favorito é: Cachorro
+E estou aprendendo sobre SHELL
+=================================
+

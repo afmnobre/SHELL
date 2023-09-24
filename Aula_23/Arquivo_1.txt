@@ -1,0 +1,6 @@
+
+========================
+Ola Meu Nome é:
+Minha Idade é:
+Meu Animal favorito é:
+
